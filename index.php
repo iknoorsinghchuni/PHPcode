@@ -1,241 +1,247 @@
-<?php
-echo '<!DOCTYPE html>';
-echo '<html lang="en">';
-echo '<head>';
-echo '<title>W3.CSS Template</title>';
-echo '<meta charset="UTF-8">';
-echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
-echo '<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">';
-echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">';
-echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">';
-echo '<style>';
-echo 'body {font-family: "Lato", sans-serif}';
-echo '.mySlides {display: none}';
-echo '</style>';
-echo '</head>';
-echo '<body>';
-echo '';
-echo '<!-- Navbar -->';
-echo '<div class="w3-top">';
-echo '<div class="w3-bar w3-black w3-card">';
-echo '<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>';
-echo '<a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>';
-echo '<a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>';
-echo '<a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>';
-echo '<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>';
-echo '<div class="w3-dropdown-hover w3-hide-small">';
-echo '<button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>';
-echo '<div class="w3-dropdown-content w3-bar-block w3-card-4">';
-echo '<a href="#" class="w3-bar-item w3-button">Merchandise</a>';
-echo '<a href="#" class="w3-bar-item w3-button">Extras</a>';
-echo '<a href="#" class="w3-bar-item w3-button">Media</a>';
-echo '</div>';
-echo '</div>';
-echo '<a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>';
-echo '</div>';
-echo '</div>';
-echo '';
-echo '<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->';
-echo '<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">';
-echo '<a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>';
-echo '<a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>';
-echo '<a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>';
-echo '<a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>';
-echo '</div>';
-echo '';
-echo '<!-- Page content -->';
-echo '<div class="w3-content" style="max-width:2000px;margin-top:46px">';
-echo '';
-echo '<!-- Automatic Slideshow Images -->';
-echo '<div class="mySlides w3-display-container w3-center">';
-echo '<img src="/w3images/la.jpg" style="width:100%">';
-echo '<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">';
-echo '<h3>Los Angeles</h3>';
-echo '<p><b>We had the best time playing at Venice Beach!</b></p>';
-echo '</div>';
-echo '</div>';
-echo '<div class="mySlides w3-display-container w3-center">';
-echo '<img src="/w3images/ny.jpg" style="width:100%">';
-echo '<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">';
-echo '<h3>New York</h3>';
-echo '<p><b>The atmosphere in New York is lorem ipsum.</b></p>';
-echo '</div>';
-echo '</div>';
-echo '<div class="mySlides w3-display-container w3-center">';
-echo '<img src="/w3images/chicago.jpg" style="width:100%">';
-echo '<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">';
-echo '<h3>Chicago</h3>';
-echo '<p><b>Thank you, Chicago - A night we won't forget.</b></p>';
-echo '</div>';
-echo '</div>';
-echo '';
-echo '<!-- The Band Section -->';
-echo '<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">';
-echo '<h2 class="w3-wide">Dilvir Singh</h2>';
-echo '<p class="w3-opacity"><i>Team Lead Alphanet</i></p>';
-echo '<p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip';
-echo 'ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur';
-echo 'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>';
-echo '<div class="w3-row w3-padding-32">';
-echo '<div class="w3-third">';
-echo '<p>Name</p>';
-echo '<img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">';
-echo '</div>';
-echo '<div class="w3-third">';
-echo '<p>Name</p>';
-echo '<img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">';
-echo '</div>';
-echo '<div class="w3-third">';
-echo '<p>Name</p>';
-echo '<img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">';
-echo '</div>';
-echo '</div>';
-echo '</div>';
-echo '';
-echo '<!-- The Tour Section -->';
-echo '<div class="w3-black" id="tour">';
-echo '<div class="w3-container w3-content w3-padding-64" style="max-width:800px">';
-echo '<h2 class="w3-wide w3-center">TOUR DATES</h2>';
-echo '<p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>';
-echo '';
-echo '<ul class="w3-ul w3-border w3-white w3-text-grey">';
-echo '<li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>';
-echo '<li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>';
-echo '<li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>';
-echo '</ul>';
-echo '';
-echo '<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">';
-echo '<div class="w3-third w3-margin-bottom">';
-echo '<img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">';
-echo '<div class="w3-container w3-white">';
-echo '<p><b>New York</b></p>';
-echo '<p class="w3-opacity">Fri 27 Nov 2016</p>';
-echo '<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>';
-echo '<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>';
-echo '</div>';
-echo '</div>';
-echo '<div class="w3-third w3-margin-bottom">';
-echo '<img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">';
-echo '<div class="w3-container w3-white">';
-echo '<p><b>Paris</b></p>';
-echo '<p class="w3-opacity">Sat 28 Nov 2016</p>';
-echo '<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>';
-echo '<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>';
-echo '</div>';
-echo '</div>';
-echo '<div class="w3-third w3-margin-bottom">';
-echo '<img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">';
-echo '<div class="w3-container w3-white">';
-echo '<p><b>San Francisco</b></p>';
-echo '<p class="w3-opacity">Sun 29 Nov 2016</p>';
-echo '<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>';
-echo '<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>';
-echo '</div>';
-echo '</div>';
-echo '</div>';
-echo '</div>';
-echo '</div>';
-echo '';
-echo '<!-- Ticket Modal -->';
-echo '<div id="ticketModal" class="w3-modal">';
-echo '<div class="w3-modal-content w3-animate-top w3-card-4">';
-echo '<header class="w3-container w3-teal w3-center w3-padding-32">';
-echo '<span onclick="document.getElementById('ticketModal').style.display='none'"';
-echo 'class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>';
-echo '<h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>';
-echo '</header>';
-echo '<div class="w3-container">';
-echo '<p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>';
-echo '<input class="w3-input w3-border" type="text" placeholder="How many?">';
-echo '<p><label><i class="fa fa-user"></i> Send To</label></p>';
-echo '<input class="w3-input w3-border" type="text" placeholder="Enter email">';
-echo '<button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>';
-echo '<button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>';
-echo '<p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>';
-echo '</div>';
-echo '</div>';
-echo '</div>';
-echo '';
-echo '<!-- The Contact Section -->';
-echo '<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">';
-echo '<h2 class="w3-wide w3-center">CONTACT</h2>';
-echo '<p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>';
-echo '<div class="w3-row w3-padding-32">';
-echo '<div class="w3-col m6 w3-large w3-margin-bottom">';
-echo '<i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>';
-echo '<i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>';
-echo '<i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>';
-echo '</div>';
-echo '<div class="w3-col m6">';
-echo '<form action="/action_page.php" target="_blank">';
-echo '<div class="w3-row-padding" style="margin:0 -16px 8px -16px">';
-echo '<div class="w3-half">';
-echo '<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">';
-echo '</div>';
-echo '<div class="w3-half">';
-echo '<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">';
-echo '</div>';
-echo '</div>';
-echo '<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">';
-echo '<button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>';
-echo '</form>';
-echo '</div>';
-echo '</div>';
-echo '</div>';
-echo '';
-echo '<!-- End Page Content -->';
-echo '</div>';
-echo '';
-echo '<!-- Image of location/map -->';
-echo '<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">';
-echo '';
-echo '<!-- Footer -->';
-echo '<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">';
-echo '<i class="fa fa-facebook-official w3-hover-opacity"></i>';
-echo '<i class="fa fa-instagram w3-hover-opacity"></i>';
-echo '<i class="fa fa-snapchat w3-hover-opacity"></i>';
-echo '<i class="fa fa-pinterest-p w3-hover-opacity"></i>';
-echo '<i class="fa fa-twitter w3-hover-opacity"></i>';
-echo '<i class="fa fa-linkedin w3-hover-opacity"></i>';
-echo '<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>';
-echo '</footer>';
-echo '';
-echo '<script>';
-echo '// Automatic Slideshow - change image every 4 seconds';
-echo 'var myIndex = 0;';
-echo 'carousel();';
-echo '';
-echo 'function carousel() {';
-echo 'var i;';
-echo 'var x = document.getElementsByClassName("mySlides");';
-echo 'for (i = 0; i < x.length; i++) {';
-echo 'x[i].style.display = "none";';
-echo '}';
-echo 'myIndex++;';
-echo 'if (myIndex > x.length) {myIndex = 1}';
-echo 'x[myIndex-1].style.display = "block";';
-echo 'setTimeout(carousel, 4000);';
-echo '}';
-echo '';
-echo '// Used to toggle the menu on small screens when clicking on the menu button';
-echo 'function myFunction() {';
-echo 'var x = document.getElementById("navDemo");';
-echo 'if (x.className.indexOf("w3-show") == -1) {';
-echo 'x.className += " w3-show";';
-echo '} else {';
-echo 'x.className = x.className.replace(" w3-show", "");';
-echo '}';
-echo '}';
-echo '';
-echo '// When the user clicks anywhere outside of the modal, close it';
-echo 'var modal = document.getElementById('ticketModal');';
-echo 'window.onclick = function(event) {';
-echo 'if (event.target == modal) {';
-echo 'modal.style.display = "none";';
-echo '}';
-echo '}';
-echo '</script>';
-echo '';
-echo '</body>';
-echo '</html>';
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Project Worlds || TEST YOUR SKILL </title>
+<link  rel="stylesheet" href="css/bootstrap.min.css"/>
+ <link  rel="stylesheet" href="css/bootstrap-theme.min.css"/>    
+ <link rel="stylesheet" href="css/main.css">
+ <link  rel="stylesheet" href="css/font.css">
+ <script src="js/jquery.js" type="text/javascript"></script>
+
+  <script src="js/bootstrap.min.js"  type="text/javascript"></script>
+ 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+<?php if(@$_GET['w'])
+{echo'<script>alert("'.@$_GET['w'].'");</script>';}
 ?>
+<script>
+function validateForm() {var y = document.forms["form"]["name"].value;	var letters = /^[A-Za-z]+$/;if (y == null || y == "") {alert("Name must be filled out.");return false;}var z =document.forms["form"]["college"].value;if (z == null || z == "") {alert("college must be filled out.");return false;}var x = document.forms["form"]["email"].value;var atpos = x.indexOf("@");
+var dotpos = x.lastIndexOf(".");if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {alert("Not a valid e-mail address.");return false;}var a = document.forms["form"]["password"].value;if(a == null || a == ""){alert("Password must be filled out");return false;}if(a.length<5 || a.length>25){alert("Passwords must be 5 to 25 characters long.");return false;}
+var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords must match.");return false;}}
+</script>
+
+
+</head>
+
+<body>
+<div class="header">
+<div class="row">
+<div class="col-lg-6">
+<span class="logo">Test Your Skill</span></div>
+<div class="col-md-2 col-md-offset-4">
+<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Signin</b></span></a></div>
+<!--sign in modal start-->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content title1">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title title1"><span style="color:orange">Log In</span></h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" action="login.php?q=index.php" method="POST">
+<fieldset>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="email"></label>  
+  <div class="col-md-6">
+  <input id="email" name="email" placeholder="Enter your email-id" class="form-control input-md" type="email">
+    
+  </div>
+</div>
+
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="password"></label>
+  <div class="col-md-6">
+    <input id="password" name="password" placeholder="Enter your Password" class="form-control input-md" type="password">
+    
+  </div>
+</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Log in</button>
+		</fieldset>
+</form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--sign in modal closed-->
+
+</div><!--header row closed-->
+</div>
+
+<div class="bg1">
+<div class="row">
+
+<div class="col-md-7"></div>
+<div class="col-md-4 panel">
+<!-- sign in form begins -->  
+  <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()" method="POST">
+<fieldset>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-12 control-label" for="name"></label>  
+  <div class="col-md-12">
+  <input id="name" name="name" placeholder="Enter your name" class="form-control input-md" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-12 control-label" for="gender"></label>
+  <div class="col-md-12">
+    <select id="gender" name="gender" placeholder="Enter your gender" class="form-control input-md" >
+   <option value="Male">Select Gender</option>
+  <option value="M">Male</option>
+  <option value="F">Female</option> </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-12 control-label" for="name"></label>  
+  <div class="col-md-12">
+  <input id="college" name="college" placeholder="Enter your college name" class="form-control input-md" type="text">
+    
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-12 control-label title1" for="email"></label>
+  <div class="col-md-12">
+    <input id="email" name="email" placeholder="Enter your email-id" class="form-control input-md" type="email">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-12 control-label" for="mob"></label>  
+  <div class="col-md-12">
+  <input id="mob" name="mob" placeholder="Enter your mobile number" class="form-control input-md" type="number">
+    
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-12 control-label" for="password"></label>
+  <div class="col-md-12">
+    <input id="password" name="password" placeholder="Enter your password" class="form-control input-md" type="password">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-12control-label" for="cpassword"></label>
+  <div class="col-md-12">
+    <input id="cpassword" name="cpassword" placeholder="Conform Password" class="form-control input-md" type="password">
+    
+  </div>
+</div>
+<?php if(@$_GET['q7'])
+{ echo'<p style="color:red;font-size:15px;">'.@$_GET['q7'];}?>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-12 control-label" for=""></label>
+  <div class="col-md-12"> 
+    <input  type="submit" class="sub" value="sign up" class="btn btn-primary"/>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div><!--col-md-6 end-->
+</div></div>
+</div><!--container end-->
+
+<!--Footer start-->
+<div class="row footer">
+<div class="col-md-3 box">
+<a href="http://www.projectworlds/online-examination" target="_blank">About us</a>
+</div>
+<div class="col-md-3 box">
+<a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
+<div class="col-md-3 box">
+<a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+</div>
+<div class="col-md-3 box">
+<a href="feedback.php" target="_blank">Feedback</a></div></div>
+<!-- Modal For Developers-->
+<div class="modal fade title1" id="developers">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" style="font-family:'typo' "><span style="color:orange">Developers</span></h4>
+      </div>
+	  
+      <div class="modal-body">
+        <p>
+		<div class="row">
+		<div class="col-md-4">
+		 <img src="image/CAM00121.jpg" width=100 height=100 alt="Sunny Prakash Tiwari" class="img-rounded">
+		 </div>
+		 <div class="col-md-5">
+		<a href="http://yugeshverma.blogspot.in" style="color:#202020; font-family:'typo' ; font-size:18px" title="Find on Facebook">Yugesh Verma</a>
+		<h4 style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">+91 9165063741</h4>
+		<h4 style="font-family:'typo' ">vermayugesh323@gmail.com</h4>
+		<h4 style="font-family:'typo' ">Chhattishgarh insitute of management & Technology ,bhilai</h4></div></div>
+		</p>
+      </div>
+    
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--Modal for admin login-->
+	 <div class="modal fade" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title"><span style="color:orange;font-family:'typo' ">LOGIN</span></h4>
+      </div>
+      <div class="modal-body title1">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<form role="form" method="post" action="admin.php?q=index.php">
+<div class="form-group">
+<input type="text" name="uname" maxlength="20"  placeholder="Admin user id" class="form-control"/> 
+</div>
+<div class="form-group">
+<input type="password" name="password" maxlength="15" placeholder="Password" class="form-control"/>
+</div>
+<div class="form-group" align="center">
+<input type="submit" name="login" value="Login" class="btn btn-primary" />
+</div>
+</form>
+</div><div class="col-md-3"></div></div>
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>-->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--footer end-->
+
+
+</body>
+</html>
